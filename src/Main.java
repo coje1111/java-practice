@@ -14,5 +14,6 @@ public class Main {
         int finalPrice = discountedPrice + vatAmount;
 
         System.out.println(finalPrice);
+        // 2026-01-03 practice: discount + VAT
     }
 }
