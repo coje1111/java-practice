@@ -1,30 +1,29 @@
 public class Main {
     public static void main(String[] args) {
 
-        int price = 12000;
-        int quantity = 3;
-        boolean isVip = true;
-        boolean isMember = false;
+        int price = 15000;
+        int quantity = 2;
+        boolean isVip = false;
+        boolean isMember = true;
 
         int totalPrice = price * quantity;
         double discountRate;
 
         if (isVip) {
             discountRate = 0.2;
-        } else if (totalPrice >= 50000) {
+        } else if (totalPrice >= 30000) {
             discountRate = 0.1;
-        } else if (isMember && quantity >= 3) {
-            discountRate = 0.07;
+        } else if (isMember && quantity >= 2) {
+            discountRate = 0.05;
         } else {
             discountRate = 0.0;
         }
 
         int discountAmount = (int) (totalPrice * discountRate);
-
         int afterDiscountPrice = totalPrice - discountAmount;
 
         int shippingFee;
-        if (afterDiscountPrice < 30000) {
+        if (afterDiscountPrice < 40000) {
             shippingFee = 3000;
         } else {
             shippingFee = 0;
@@ -32,7 +31,7 @@ public class Main {
 
         int pointUsed;
         if (isVip) {
-            pointUsed = 2000;
+            pointUsed = 5000;
         } else {
             pointUsed = 0;
         }
@@ -47,7 +46,6 @@ public class Main {
         System.out.println(shippingFee);
         System.out.println(pointUsed);
         System.out.println(finalPay);
-
     }
 }
 
