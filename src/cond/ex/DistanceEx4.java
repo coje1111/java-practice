@@ -1,6 +1,6 @@
 package cond.ex;
 
-public class ScoreEx4 {
+public class DistanceEx4 {
 
   public static void main(String[] args) {
     //거리에 따른 운송 수단 선택하기
