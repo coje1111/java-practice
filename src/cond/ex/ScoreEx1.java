@@ -4,6 +4,8 @@ public class ScoreEx1 {
 
   public static void main(String[] args) {
 
+    // if문 하드코딩
+
     int score = 71;
 
     if (score >= 90 && score <= 100) {
